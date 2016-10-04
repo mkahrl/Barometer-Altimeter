@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginLeft="12dp"
+	android:layout_marginRight="12dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginBottom="16dp">
+	<TextView android:id="@+id/actual_alt_label"
+	         android:layout_width="match_parent"
+	         android:layout_height="wrap_content"
+	         android:textSize="32dp"
+             android:textColor="#fff"
+	         android:text="@string/actual_alt_label"/>
+             
+    <EditText
+             android:id="@+id/actual_alt"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:inputType="number"
+             android:textSize="50dp"
+             android:textColor="#fff"/>
+		
+		<LinearLayout 
+			android:orientation="horizontal" 
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="6dp"
+			android:layout_marginRight="6dp"
+            android:textColor="#fff"
+            android:textSize="30dp">
+		<Button 
+            android:id="@+id/ok_button"
+            android:layout_width="124dp"
+            android:layout_height="78dp"
+            android:text="@string/ok"
+            android:textColor="#fff"
+            android:layout_margin="10dp"
+            android:textSize="28dp"/>
+         <Button 
+            android:id="@+id/canc_button"
+            android:layout_width="146dp"
+            android:layout_height="78dp"
+            android:text="@string/cancel"
+            android:textColor="#fff"
+            android:layout_margin="10dp"
+            android:textSize="28dp"/>
+         </LinearLayout>
+</LinearLayout>

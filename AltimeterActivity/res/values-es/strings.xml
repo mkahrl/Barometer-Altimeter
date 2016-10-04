@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Barometer Altimeter</string>
+    <string name="alt_label">Altitud</string>
+    <string name="actual_alt_label">Altitud conocida</string>
+    <string name="pressure_label">Presión</string>
+    <string name="ok">OK</string>
+    <string name="cancel">CANCELAR</string>
+    <string name="save">GUARDER</string>
+    <string name="calibrate">Calibrar</string>
+    <string name="preferences">Preferencias</string>
+    <string name="alt_unit_label">Unidad de Altitud</string>
+    <string name="press_unit_label">Unidad de Presión</string>
+    <string name="no_sensor">¡Barómetro no encontrado en este equipo!</string>
+    <string name="no_barom">No Barómetro</string>
+    <string name="feet">ft</string>
+    <string name="meter">m</string>
+    <string name="millibar">millibar</string>
+    <string name="kpa">kPA</string>
+    <string name="inhg">inHg</string>
+    <string name="mmhg">mmHg</string>
+    <string name="psi">psi</string>
+    <string name="alt_units">alt_units</string>
+    <string name="press_units">press_units</string>
+    <string name="current_alt">current_alt</string>
+    <string name="current_press">current_press</string>
+</resources>

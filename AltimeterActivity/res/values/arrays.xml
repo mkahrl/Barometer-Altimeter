@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="alt_units">
+        <item>ft</item>
+        <item>m</item>
+    </string-array>
+    
+    <string-array name="press_units">
+        <item>millibar</item>
+        <item>kPA</item>
+        <item>psi</item>
+        <item>inHg</item>
+        <item>mmHg</item>
+    </string-array>
+</resources>

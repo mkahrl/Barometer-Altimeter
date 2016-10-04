@@ -1,0 +1,10 @@
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"    
+android:minWidth="140dp"
+android:minHeight="62dp"
+android:maxHeight="62dp"
+android:updatePeriodMillis="120000" 
+android:widgetCategory="keyguard|home_screen"       
+android:initialLayout="@layout/altwidget"        
+android:resizeMode="horizontal|vertical"
+    >
+</appwidget-provider>

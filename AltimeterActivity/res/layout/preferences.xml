@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+    android:paddingLeft="28dp"
+    android:background="@drawable/plate">
+	
+	<TextView android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:text="@string/alt_unit_label"
+	         android:textSize="32dp"
+             android:textColor="#fff"
+             android:layout_marginLeft="4dp"/>
+	 <Spinner  android:id="@+id/alt_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+                
+     <TextView android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:text="@string/press_unit_label"
+	         android:textSize="32dp"
+             android:textColor="#fff"
+             android:layout_marginLeft="4dp"/>
+	 <Spinner  android:id="@+id/pressure_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+      
+     <LinearLayout
+		android:orientation="horizontal" 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		
+		<Button 
+            android:id="@+id/save_button"
+            android:layout_height="78dp"
+            android:layout_width="120dp"
+            android:textSize="28dp"
+            android:layout_margin="10dp"
+            android:text="@string/save"
+            android:textColor="#fff"/>
+         <Button 
+            android:id="@+id/cancel_button"
+            android:layout_width="136dp"
+            android:textSize="28dp"
+            android:layout_height="78dp"
+            android:layout_margin="10dp"
+            android:text="@string/cancel"
+            android:textColor="#fff"/>
+            </LinearLayout>
+</LinearLayout>

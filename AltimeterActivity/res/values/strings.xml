@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Barometer Altimeter</string>
+    <string name="alt_label">Altitude</string>
+    <string name="actual_alt_label">Known altitude</string>
+    <string name="pressure_label">Pressure</string>
+    <string name="ok">OK</string>
+    <string name="cancel">CANCEL</string>
+    <string name="save">SAVE</string>
+    <string name="help">Help</string>
+    <string name="helptext">     Please calibrate for best results. To calibrate, press the \'Calibrate\' button and enter your known altitude. Calibrate frequently as your location and the weather changes. If the application is not calibrated, the altitude indicated may not be accurate, and may vary from the actual altitude by up to 300 ft or 100 meters.</string>
+    <string name="calibrate">Calibrate</string>
+    <string name="preferences">Preferences</string>
+    <string name="alt_unit_label">Altitude Unit</string>
+    <string name="press_unit_label">Pressure Unit</string>
+    <string name="no_sensor">No barometer found on this device !</string>
+    <string name="no_barom">No barometer</string>
+    <string name="feet">ft</string>
+    <string name="meter">m</string>
+    <string name="millibar">millibar</string>
+    <string name="kpa">kPA</string>
+    <string name="inhg">inHg</string>
+    <string name="mmhg">mmHg</string>
+    <string name="psi">psi</string>
+    <string name="alt_units">alt_units</string>
+    <string name="press_units">press_units</string>
+    <string name="current_alt">current_alt</string>
+    <string name="current_press">current_press</string>
+</resources>
