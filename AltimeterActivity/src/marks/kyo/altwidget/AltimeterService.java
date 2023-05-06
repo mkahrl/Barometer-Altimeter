@@ -28,23 +28,23 @@ public class AltimeterService extends Service implements SensorCallback
 	}
 	
 	public void onPressureChange(double value)
-    {
-    	SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(this);
+        {
+    		SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(this);
 		SharedPreferences.Editor ed = sp.edit();
 		ed.putFloat(CURRENT_PRESS, (float)value);
 		ed.commit();
-    }
+         }
 
-    public void onAltChange(double value)
-    {
-    	SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(this);
+    	public void onAltChange(double value)
+    	{
+    		SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(this);
 		SharedPreferences.Editor ed = sp.edit();
 		ed.putFloat(CURRENT_ALT, (float)value);
 		ed.commit();
-    }
+   	 }
     
-    public void noSensorFound()
-    {
-    	new NoBaromDialog(this).show();
-    }
+    	public void noSensorFound()
+   	{
+    		new NoBaromDialog(this).show();
+    	}
 }
