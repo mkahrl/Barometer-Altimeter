@@ -2,7 +2,7 @@
  * @(#)ActualAltDialog.java
  *
  *
- * @author
+ * @author Mark Kahrl
  * @version 1.00 2012/1/5
  */
 package marks.kyo.altwidget;
