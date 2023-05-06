@@ -17,9 +17,7 @@ public class AltimeterActivity extends Activity implements SensorCallback, OnCli
 	TextView alt;
 	TextView altLabel;
 	TextView pressLabel;
-	//MenuItem calibrate;
-	//MenuItem prefs;
-    MenuItem help;
+    	MenuItem help;
 	private final static String TENS_FORMAT = "%.1f";
 	private final static String ZERO_FORMAT = "%.0f";
 	private static String ALT_UNITS;
@@ -44,7 +42,7 @@ public class AltimeterActivity extends Activity implements SensorCallback, OnCli
         altLabel = (TextView) findViewById(R.id.altitude_label);
         pressLabel = (TextView) findViewById(R.id.pressure_label);
         convertor = new UnitConvertor(this);
-  		getStrings();
+  	getStrings();
         startService();
         handler = new Handler(getMainLooper());
         handler.postDelayed(new Update(), update_interval);
@@ -57,12 +55,12 @@ public class AltimeterActivity extends Activity implements SensorCallback, OnCli
     {
     	alt_lbl=getResources().getString(R.string.alt_label);
     	prs_lbl=getResources().getString(R.string.pressure_label);
-  		ft = getResources().getString(R.string.feet);
-  		mb = getResources().getString(R.string.millibar);
-  		ALT_UNITS = getResources().getString(R.string.alt_units);
-  		PRESS_UNITS = getResources().getString(R.string.press_units);
-  		CURRENT_ALT = getResources().getString(R.string.current_alt);
-  		CURRENT_PRESS = getResources().getString(R.string.current_press);
+  	ft = getResources().getString(R.string.feet);
+  	mb = getResources().getString(R.string.millibar);
+  	ALT_UNITS = getResources().getString(R.string.alt_units);
+  	PRESS_UNITS = getResources().getString(R.string.press_units);
+  	CURRENT_ALT = getResources().getString(R.string.current_alt);
+  	CURRENT_PRESS = getResources().getString(R.string.current_press);
     }
     
     private void startService()
@@ -89,20 +87,20 @@ public class AltimeterActivity extends Activity implements SensorCallback, OnCli
     	String alt_units=sp.getString(ALT_UNITS, ft);
     	String p_units=sp.getString(PRESS_UNITS, mb);
     
-		float press = sp.getFloat(CURRENT_PRESS, 0.0f);
-		press = convertor.convertPressure(press, p_units);
-		String s = String.format(TENS_FORMAT, press);
-		pressure.setText(s);
+	float press = sp.getFloat(CURRENT_PRESS, 0.0f);
+	press = convertor.convertPressure(press, p_units);
+	String s = String.format(TENS_FORMAT, press);
+	pressure.setText(s);
 		
-		String pp=prs_lbl+" ("+p_units+")";
+	String pp=prs_lbl+" ("+p_units+")";
         pressLabel.setText(pp); 
 		
-		float lt = sp.getFloat(CURRENT_ALT, 0.0f);
-		lt = convertor.convertAltitude(lt, alt_units);
-		String ss = String.format(ZERO_FORMAT, lt);
-		alt.setText(ss);
+	float lt = sp.getFloat(CURRENT_ALT, 0.0f);
+	lt = convertor.convertAltitude(lt, alt_units);
+	String ss = String.format(ZERO_FORMAT, lt);
+	alt.setText(ss);
 		
-		String aa=alt_lbl+" ("+alt_units+")";
+	String aa=alt_lbl+" ("+alt_units+")";
         altLabel.setText(aa);
     }
     
@@ -127,7 +125,7 @@ public class AltimeterActivity extends Activity implements SensorCallback, OnCli
         if (id == R.id.preferences)
         {
             Intent intent = new Intent(this, PrefsActivity.class);
-		    startActivity(intent);
+	    startActivity(intent);
         }
         
         if (id == R.id.calibrate) new ActualAltDialog(this).show();
@@ -138,7 +136,7 @@ public class AltimeterActivity extends Activity implements SensorCallback, OnCli
     public boolean onCreateOptionsMenu(Menu menu)
     {
     	super.onCreateOptionsMenu(menu);
-	    help = menu.add(R.string.help);
+	help = menu.add(R.string.help);
     	return true;
     }
 
@@ -151,7 +149,7 @@ public class AltimeterActivity extends Activity implements SensorCallback, OnCli
     public void calibrate(float actualAlt)
     {
         
-		String ss = String.format(ZERO_FORMAT, actualAlt);
+	String ss = String.format(ZERO_FORMAT, actualAlt);
         alt.setText(ss);
        
         BarometerManager.getInstance(this.getApplicationContext(), this).calibrate(actualAlt);
