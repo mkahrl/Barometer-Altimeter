@@ -49,17 +49,17 @@ public class PrefsActivity extends Activity implements OnClickListener
     public void setAltUnits(String s)
     {
     	 SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(this);
-		 SharedPreferences.Editor ed = sp.edit();
-		 ed.putString(ALT_UNITS, s);
-		 ed.commit();
+	 SharedPreferences.Editor ed = sp.edit();
+	 ed.putString(ALT_UNITS, s);
+	 ed.commit();
     }
     
     public void setPressUnits(String s)
     {
     	 SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(this);
-		 SharedPreferences.Editor ed = sp.edit();
-		 ed.putString(PRESS_UNITS, s);
-		 ed.commit();
+	 SharedPreferences.Editor ed = sp.edit();
+	 ed.putString(PRESS_UNITS, s);
+	 ed.commit();
     }
     
     public void onClick(View v)
@@ -75,9 +75,9 @@ public class PrefsActivity extends Activity implements OnClickListener
     
     private void getStrings()
     {
-  		ft = getResources().getString(R.string.feet);
-  		mb = getResources().getString(R.string.millibar);
-  		ALT_UNITS = getResources().getString(R.string.alt_units);
-  		PRESS_UNITS = getResources().getString(R.string.press_units);
+  	 ft = getResources().getString(R.string.feet);
+  	 mb = getResources().getString(R.string.millibar);
+  	 ALT_UNITS = getResources().getString(R.string.alt_units);
+  	 PRESS_UNITS = getResources().getString(R.string.press_units);
     }
 }
