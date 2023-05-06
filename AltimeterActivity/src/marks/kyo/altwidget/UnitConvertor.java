@@ -40,12 +40,12 @@ public class UnitConvertor
     
     private void getStrings(Context ctx)
     {
-  		ft = ctx.getResources().getString(R.string.feet);
-  		mb = ctx.getResources().getString(R.string.millibar);
-  		m = ctx.getResources().getString(R.string.meter);
-  		kpa = ctx.getResources().getString(R.string.kpa);
-  		inhg = ctx.getResources().getString(R.string.inhg);
-  		mmhg = ctx.getResources().getString(R.string.mmhg);
-  		psi = ctx.getResources().getString(R.string.psi);
+  	ft = ctx.getResources().getString(R.string.feet);
+  	mb = ctx.getResources().getString(R.string.millibar);
+  	m = ctx.getResources().getString(R.string.meter);
+  	kpa = ctx.getResources().getString(R.string.kpa);
+  	inhg = ctx.getResources().getString(R.string.inhg);
+  	mmhg = ctx.getResources().getString(R.string.mmhg);
+  	psi = ctx.getResources().getString(R.string.psi);
     }
 }
