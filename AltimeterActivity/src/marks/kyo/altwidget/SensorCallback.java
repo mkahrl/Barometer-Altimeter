@@ -2,7 +2,7 @@
  * @(#)SensorCallback.java
  *
  *
- * @author
+ * @author Mark Kahrl
  * @version 1.00 2012/1/3
  */
 package marks.kyo.altwidget;
