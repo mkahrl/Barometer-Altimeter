@@ -8,11 +8,11 @@ import java.util.*;
 
 public class BarometerManager
 {
-	private Sensor barometer;
-	private Averager averager = new Averager();
-	private float currentPressure;
-	private double pressureCorrection;
-	private SensorCallback sensorCallback;
+    private Sensor barometer;
+    private Averager averager = new Averager();
+    private float currentPressure;
+    private double pressureCorrection;
+    private SensorCallback sensorCallback;
     private static BarometerManager bmanager;
     private Context ctx;
     private static String ft;
@@ -61,8 +61,8 @@ public class BarometerManager
         }
         else
         {
-            this.sensorCallback.noSensorFound();
-            return;
+            	this.sensorCallback.noSensorFound();
+            	return;
         }
         pressureCorrection=(double)PreferenceManager.getDefaultSharedPreferences(ctx).getFloat(PRESSURE_CORRECTION, 0.0f);
     }
@@ -113,8 +113,8 @@ public class BarometerManager
     	double ap = getPressure(actualAlt);
     	pressureCorrection = currentPressure - ap;
         SharedPreferences.Editor ed = sp.edit();
-		ed.putFloat(PRESSURE_CORRECTION, (float)pressureCorrection);
-		ed.commit();
+	ed.putFloat(PRESSURE_CORRECTION, (float)pressureCorrection);
+	ed.commit();
     }
 
     public double getPressure(double alt)
@@ -133,9 +133,9 @@ public class BarometerManager
     
     private void getStrings(Context ctx)
     {
-  		ft = ctx.getResources().getString(R.string.feet);
-  		m = ctx.getResources().getString(R.string.meter);
-  		ALT_UNITS = ctx.getResources().getString(R.string.alt_units);
+  	ft = ctx.getResources().getString(R.string.feet);
+  	m = ctx.getResources().getString(R.string.meter);
+  	ALT_UNITS = ctx.getResources().getString(R.string.alt_units);
     }
 
     class Averager
